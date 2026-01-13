@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+
+    <title>Manesh Jadhav | Profile</title>
+    <link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="page-border">
+    
+
+
+
+
+<header>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+   <h2 class="logo-title">My Profile...!!😇</h2>
+    
+        
+       <nav id="navMenu">
+
+    <a href="#home">🏠Home</a>
+    <a href="#about">🙋‍♂️About</a>
+    <a href="#skills">💡Skills</a>
+    <a href="#projects">📁Projects</a>
+    <a href="contact.html">📞Contact</a>
+    <a href="#Resume & Certificates">📄Resume & 🎓Certificates</a>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<div id="scroll-bar"></div>
+
+    </nav>
+</header>
+<script>
+window.addEventListener("scroll", () => {
+  const bar = document.getElementById("scroll-bar");
+  const height = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = (window.scrollY / height) * 100;
+  bar.style.width = progress + "%";
+});
+</script>
+
+
+
+<div class="underline"></div>
+<nav id="navMenu">
+
+
+<section class="hero" data-aos="fade-up">
+
+    <div class="content">
+        <h1>Hi, I’m <span>Manesh Jadhav</span></h1>
+       <h3 id="typing"></h3>
+        <p>
+            I am an aspiring Frontend Developer passionate about building responsive and user-friendly websites.
+            I enjoy creating clean UI designs and continuously learning new web technologies.
+        </p>
+        <div class="stats-container">
+
+  <div class="stat-card">
+    <span class="stat-icon">⭐</span>
+    <h3>5+</h3>
+    <p>Projects</p>
+  </div>
+
+  <div class="stat-card">
+    <span class="stat-icon">💻</span>
+    <h3>Frontend</h3>
+    <p>Developer</p>
+  </div>
+
+  <div class="stat-card">
+    <span class="stat-icon">📚</span>
+    <h3>B.Tech</h3>
+    <p>2027</p>
+  </div>
+
+</div>
+
+
+    </div>
+
+    <div class="image">
+        <img src="C:\Users\manes\OneDrive\Desktop\New folder (2)\photo.jpg" alt="Profile">
+    </div>
+
+</section>
+<div class="underline"></div>
+<section class="about" id="about">
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about-cards">
+
+    <div class="about-card">
+      <div class="about-icon">👤</div>
+      <h3>Who I Am</h3>
+      <p>
+        I am a B.Tech student and aspiring Frontend Developer who is passionate
+        about building clean, modern, and user-friendly web applications.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <div class="about-icon">💻</div>
+      <h3>What I Do</h3>
+      <p>
+        I design and develop responsive websites, UI components, and real-world
+        projects using modern frontend technologies.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <div class="about-icon">⚙️</div>
+      <h3>Tech I Use</h3>
+      <p>
+        HTML, CSS, JavaScript, Git, GitHub and tools that help build fast,
+        scalable, and maintainable web solutions.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("navMenu");
+  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+}
+</script>
+<div class="underline"></div>
+<section class="skills" id="skills">
+  <h2 class="section-title">My Skills</h2>
+
+  <div class="skills-container">
+
+    <div class="skill">
+      <span>HTML</span>
+      <div class="progress">
+        <div class="progress-bar html">90%</div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>CSS</span>
+      <div class="progress">
+        <div class="progress-bar css">85%</div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>JavaScript</span>
+      <div class="progress">
+        <div class="progress-bar js">80%</div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>Git & GitHub</span>
+      <div class="progress">
+        <div class="progress-bar git">82%</div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>Responsive Design</span>
+      <div class="progress">
+        <div class="progress-bar responsive">70%</div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>Problem Solving</span>
+      <div class="progress">
+        <div class="progress-bar problem">75%</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="underline"></div>
+
+<section class="projects" id="projects">
+  <h2 class="section-title">My Projects</h2>
+  <p class="section-subtitle">Some of the work I’ve built while learning and growing</p>
+
+  <div class="projects-container">
+
+    <!-- Project 1 -->
+    <div class="project-card featured">
+      <img src="C:\Users\manes\OneDrive\Desktop\New folder (2)\portfolio.png" alt="Portfolio Project">
+
+      <div class="project-content">
+        <span class="tag">⭐ Featured</span>
+        <h3>Personal Portfolio</h3>
+        <p class="project-desc">
+          Responsive portfolio website showcasing my skills, projects, and contact details.
+        </p>
+
+        <div class="tech-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+
+        <p class="learned">📌 Learned: Responsive UI & layout structuring</p>
+
+        <div class="project-buttons">
+          <a href="#" class="btn live">Live Demo</a>
+          <a href="#" class="btn github">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="C:\Users\manes\OneDrive\Desktop\New folder (2)\bus.png" alt="Bus Pass System">
+
+      <div class="project-content">
+        <span class="tag academic">Academic Project</span>
+        <h3>Bus Pass System</h3>
+        <p class="project-desc">
+          Academic project for managing bus pass applications digitally.
+        </p>
+
+        <div class="tech-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>PHP</span>
+          <span>MySQL</span>
+        </div>
+
+        <p class="learned">📌 Learned: Form handling & backend basics</p>
+
+        <div class="project-buttons">
+          <a href="#" class="btn live">Live Demo</a>
+          <a href="#" class="btn github">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+<div class="underline"></div>
+<!-- RESUME & CERTIFICATES -->
+<section id="resume" class="resume-cert" data-aos="fade-up">
+ <h2 class="section-title">Resume & Certificates</h2>
+
+
+
+  <div class="resume-box">
+    <h3>📄 My Resume</h3>
+    <p>
+      Download my resume to know more about my education, skills and projects.
+    </p>
+    <a class="btn" onclick="openResume()">Preview Resume</a>
+
+      Download Resume
+    </a>
+  </div>
+
+<div class="achievements-row">
+  <div class="achievement">🏆 <span>3+</span> Certifications</div>
+  <div class="achievement">📚 Continuous Learner</div>
+  <div class="achievement">🚀 Career Focused</div>
+</div>
+<div class="underline"></div>
+
+  <div class="certificates">
+
+<h2 class="section-title"></h2>
+<h2 class="section-title">🏆 Certificates</h2>
+
+
+    
+<h3 class="cert-title"></h3>
+<p class="cert-subtitle"></p>
+
+
+<div class="cert-grid">
+
+  <div class="cert-card" onclick="openCert('file:///C:/Users/manes/OneDrive/Desktop/New%20folder%20(2)/front%20end.pdf', 'Frontend Development')">
+    <h4>Frontend Development</h4>
+    <p>HTML, CSS & JavaScript</p>
+   
+    <a href="#" class="cert-btn">View Certificate</a>
+
+  </div>
+
+  <div class="cert-card" onclick="openCert('file:///C:/Users/manes/OneDrive/Desktop/New%20folder%20(2)/Project%20Management%20Institute%20(PMI)%C2%AE.pdf', 'Project Management')">
+    <h4>Project Management</h4>
+    <p>Basecamp – LinkedIn Learning</p>
+    
+    <a href="#" class="cert-btn">View Certificate</a>
+
+  </div>
+
+  <div class="cert-card" onclick="openCert('file:///C:/Users/manes/OneDrive/Desktop/New%20folder%20(2)/DocScanner%2013%20Jan%202026%2012-48%E2%80%AFpm.pdf', 'Programming Basics')">
+    <h4>Programming Basics</h4>
+    <p>Python / C++</p>
+    
+    <a href="#" class="cert-btn">View Certificate</a>
+
+  </div>
+
+</div>
+
+    <div class="cert-cta">
+  <p>Want to verify my certifications?</p>
+  <a href="contact.html" class="cta-btn">Contact Me</a>
+</div>
+
+
+</section>
+
+
+
+<script>
+const roles = [
+  "I’m a Frontend Developer",
+"I’m a UI Designer",
+"I’m a Software Developer"
+
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typingElement = document.getElementById("typing");
+
+function typeEffect() {
+  const currentRole = roles[roleIndex];
+
+  if (!isDeleting) {
+    typingElement.textContent = currentRole.substring(0, charIndex++);
+    if (charIndex > currentRole.length) {
+      isDeleting = true;
+      setTimeout(() => {}, 1000);
+    }
+  } else {
+    typingElement.textContent = currentRole.substring(0, charIndex--);
+    if (charIndex === 0) {
+      isDeleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+    }
+  }
+  setTimeout(typeEffect, isDeleting ? 60 : 120);
+}
+
+typeEffect();
+</script>
+  <!-- CTA -->
+  <div class="project-cta">
+    <p></p>
+    
+  </div>
+</section>
+
+<div class="underline"></div>
+
+<section class="contact">
+  <h2 class="section-title">Contact Me</h2>
+
+
+    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+           <h2>Contact Me</h2>
+<div class="project-card" data-aos="fade-up" data-aos-delay="400">
+
+ 
+    <p>Email: maneshrajujadhav2005@gmail.com</p>
+    <p>Phone: +91 8275933781</p>
+</section>
+
+
+
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("light");
+
+    const toggleBtn = document.querySelector(".theme-toggle");
+    if (document.body.classList.contains("light")) {
+        toggleBtn.textContent = "☀️";
+    } else {
+        toggleBtn.textContent = "🌙";
+    }
+}
+</script>
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+<footer>
+  <p>© 2026 Manesh Jadhav. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000, once: true });</script>
+
+<!-- Resume Popup -->
+<div id="resumePopup" class="resume-popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closeResume()">×</span>
+
+    <h3>My Resume</h3>
+
+    <iframe 
+      src="file:///C:/Users/manes/OneDrive/Desktop/New%20folder%20(2)/Resume%201.pdf"
+      frameborder="0">
+    </iframe>
+
+    <a href="file:///C:/Users/manes/OneDrive/Desktop/New%20folder%20(2)/Resume%201.pdf" class="btn" download>
+      Download Resume
+    </a>
+  </div>
+</div>
+
+ <!-- Certificate Popup -->
+<div id="certPopup" class="resume-popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closeCert()">×</span>
+
+    <h3 id="certTitle"></h3>
+
+    <iframe id="certFrame" frameborder="0"></iframe>
+
+    <a id="certDownload" class="btn" download>Download Certificate</a>
+  </div>
+</div>
+
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+ <footer>
+  
+
+  <div class="socials">
+    <a href="https://www.linkedin.com/feed/" target="_blank">Linkedin
+      <i class="fa-brands fa-github"> </i>
+    </a>
+
+    <a href="https://github.com/" target="_blank">Github
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+  </div>
+</footer>
+
+
+
+
+  </div>
+
+
+
+
+
+ 
+
+
+</body>
+
+</html>

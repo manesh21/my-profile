@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me | Manesh Jadhav</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <!-- ===== Navbar (Same as main site) ===== -->
+  <nav class="navbar">
+    <h2 class="logo">Manesh</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="contact-page">
+
+    <h1 class="page-title">Contact Me</h1>
+    <p class="page-subtitle">
+      Let’s connect and build something great together 🚀
+    </p>
+
+    <div class="availability">🟢 Available for Internship & Projects</div>
+
+    <div class="contact-container">
+
+      <!-- Contact Form -->
+      <form class="contact-form" 
+      action="https://formspree.io/f/xwkgabcd" 
+      method="POST">
+      <p class="success-msg" style="display:none;">
+  ✅ Thanks for reaching out! I’ll get back to you soon.
+</p>
+
+
+        <h2>Send a Message</h2>
+
+       <input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<input type="text" name="subject" placeholder="Subject">
+
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+
+        <button type="submit">Send Message</button>
+
+        <p class="response-time">⏱ I usually respond within 24 hours</p>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Contact Info</h2>
+
+        <p>📧 <strong>Email:</strong><br> maneshrajujadhav2005@gmail.com</p>
+        <p>📞 <strong>Phone:</strong><br> +91 8275933781</p>
+        <p>📍 <strong>Location:</strong><br> Maharashtra, India</p>
+
+        <div class="social-links">
+          <a href="https://github.com/maneshjadhav21" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/maneshjadhav21" target="_blank">LinkedIn</a>
+          <a href="mailto:maneshrajujadhav2005@gmail.com">Email</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="contact-cta">
+      <p>I’m open to internships, freelance work, and collaborations.</p>
+    </div>
+
+  </section>
+
+
+  <script>
+const form = document.querySelector(".contact-form");
+const successMsg = document.querySelector(".success-msg");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  const response = await fetch(form.action, {
+    method: form.method,
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  if (response.ok) {
+    form.reset();
+    successMsg.style.display = "block";
+  }
+});
+</script>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2026 Manesh Jadhav | All Rights Reserved
+  </footer>
+
+
+
+
+
+
+
+</body>
+</html>
